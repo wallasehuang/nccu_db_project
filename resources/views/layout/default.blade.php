@@ -36,7 +36,7 @@
                 <div class="profile-menu">
                     <a href="">
                         <div class="profile-pic">
-                            <img src="{{URL::asset('img/profile-pics/1.jpg')}}" alt="">
+                            <img src="{{URL::asset('img/profile-pics/10.png')}}" alt="">
                         </div>
 
                         <div class="profile-info">

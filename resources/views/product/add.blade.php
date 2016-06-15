@@ -55,20 +55,22 @@
 
     $("input[name='cost']").TouchSpin({
         min: 0,
-        max: 9999,
+        max: 999999,
         step: 100,
         decimals: 0,
         boostat: 10,
         maxboostedstep: 100,
+        forcestepdivisibility:'none',
         prefix: '<i class="zmdi zmdi-money" aria-hidden="true"></i>'
       });
     $("input[name='price']").TouchSpin({
         min: 0,
-        max: 9999,
+        max: 999999,
         step: 100,
         decimals: 0,
         boostat: 10,
         maxboostedstep: 100,
+        forcestepdivisibility:'none',
         prefix: '<i class="zmdi zmdi-money" aria-hidden="true"></i>'
       });
 
@@ -83,7 +85,7 @@
         price:{
           required:true,
           digits:true,
-          min:parseInt($('[name=cost]').val()),
+          min:0,
         }
       },
       messages: {
@@ -98,7 +100,7 @@
         price:{
           required:"商品價格為必填",
           digits:"請輸入數字",
-          min:"價格請大於成本"
+          min:"數字請大於0"
         }
       }
     });

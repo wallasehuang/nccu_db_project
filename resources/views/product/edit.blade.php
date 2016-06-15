@@ -60,6 +60,7 @@
         decimals: 0,
         boostat: 10,
         maxboostedstep: 100,
+        forcestepdivisibility:'none',
         prefix: '<i class="zmdi zmdi-money" aria-hidden="true"></i>'
       });
     $("input[name='price']").TouchSpin({
@@ -69,6 +70,7 @@
         decimals: 0,
         boostat: 10,
         maxboostedstep: 100,
+        forcestepdivisibility:'none',
         prefix: '<i class="zmdi zmdi-money" aria-hidden="true"></i>'
       });
 
